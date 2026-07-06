@@ -1,0 +1,197 @@
+===== EC2 Monitoring Report
+=====
+Date: Mon Jul  6 10:37:40 UTC 2026
+
+===== Running Services =====
+  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+  acpid.service                                  loaded active running ACPI event daemon
+  apparmor.service                               loaded active exited  Load AppArmor profiles
+  apport.service                                 loaded active exited  automatic crash report generation
+  blk-availability.service                       loaded active exited  Availability of block devices
+  chrony.service                                 loaded active running chrony, an NTP client/server
+  cloud-config.service                           loaded active exited  Cloud-init: Config Stage
+  cloud-final.service                            loaded active exited  Cloud-init: Final Stage
+  cloud-init-local.service                       loaded active exited  Cloud-init: Local Stage (pre-network)
+  cloud-init-network.service                     loaded active exited  Cloud-init: Network Stage
+  console-setup.service                          loaded active exited  Set console font and keymap
+  cron.service                                   loaded active running Regular background program processing daemon
+  dbus.service                                   loaded active running D-Bus System Message Bus
+  dracut-shutdown.service                        loaded active exited  Restore /run/initramfs on shutdown
+  finalrd.service                                loaded active exited  Create final runtime dir for shutdown pivot root
+  getty@tty1.service                             loaded active running Getty on tty1
+  irqbalance.service                             loaded active running irqbalance daemon
+  keyboard-setup.service                         loaded active exited  Set the console keyboard layout
+  kmod-static-nodes.service                      loaded active exited  Create List of Static Device Nodes
+  ldconfig.service                               loaded active exited  Rebuild Dynamic Linker Cache
+  lvm2-monitor.service                           loaded active exited  Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling
+  ModemManager.service                           loaded active running Modem Manager
+  multipathd-queueing.service                    loaded active exited  Enable queuing for multipath maps
+  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller
+  netplan-configure.service                      loaded active exited  Netplan Backend Configuration
+  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd
+  plymouth-quit-wait.service                     loaded active exited  Hold until boot process finishes up
+  plymouth-quit.service                          loaded active exited  Terminate Plymouth Boot Screen
+  plymouth-read-write.service                    loaded active exited  Tell Plymouth To Write Out Runtime Data
+  polkit.service                                 loaded active running Authorization Manager
+  rsyslog.service                                loaded active running System Logging Service
+  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0
+  setvtrgb.service                               loaded active exited  Set console scheme
+  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+  snapd.apparmor.service                         loaded active exited  Load AppArmor profiles managed internally by snapd
+  snapd.seeded.service                           loaded active exited  Wait until snapd is fully seeded
+  snapd.service                                  loaded active running Snap Daemon
+  ssh.service                                    loaded active running OpenBSD Secure Shell server
+  sysstat.service                                loaded active exited  Resets System Activity Logs
+  systemd-binfmt.service                         loaded active exited  Set Up Additional Binary Formats
+  systemd-fsck-root.service                      loaded active exited  File System Check on Root Device
+  systemd-fsck@dev-disk-by\x2dlabel-BOOT.service loaded active exited  File System Check on /dev/disk/by-label/BOOT
+  systemd-fsck@dev-disk-by\x2dlabel-UEFI.service loaded active exited  File System Check on /dev/disk/by-label/UEFI
+  systemd-journal-catalog-update.service         loaded active exited  Rebuild Journal Catalog
+  systemd-journal-flush.service                  loaded active exited  Flush Journal to Persistent Storage
+  systemd-journald.service                       loaded active running Journal Service
+  systemd-logind.service                         loaded active running User Login Management
+  systemd-machine-id-commit.service              loaded active exited  Save Transient machine-id to Disk
+  systemd-modules-load.service                   loaded active exited  Load Kernel Modules
+  systemd-networkd-persistent-storage.service    loaded active exited  Enable Persistent Storage in systemd-networkd
+  systemd-networkd-wait-online.service           loaded active exited  Wait for Network to be Online
+  systemd-networkd.service                       loaded active running Network Management
+  systemd-random-seed.service                    loaded active exited  Load/Save OS Random Seed
+  systemd-remount-fs.service                     loaded active exited  Remount Root and Kernel File Systems
+  systemd-resolved.service                       loaded active running Network Name Resolution
+  systemd-sysctl.service                         loaded active exited  Apply Kernel Variables
+  systemd-sysusers.service                       loaded active exited  Create System Users
+  systemd-tmpfiles-setup-dev-early.service       loaded active exited  Create Static Device Nodes in /dev gracefully
+  systemd-tmpfiles-setup-dev.service             loaded active exited  Create Static Device Nodes in /dev
+  systemd-tmpfiles-setup.service                 loaded active exited  Create System Files and Directories
+  systemd-udev-load-credentials.service          loaded active exited  Load udev Rules from Credentials
+  systemd-udev-trigger.service                   loaded active exited  Coldplug All udev Devices
+  systemd-udevd.service                          loaded active running Rule-based Manager for Device Events and Files
+  systemd-update-done.service                    loaded active exited  Update is Completed
+  systemd-user-sessions.service                  loaded active exited  Permit User Sessions
+  udisks2.service                                loaded active running Disk Manager
+  ufw.service                                    loaded active exited  Uncomplicated firewall
+  unattended-upgrades.service                    loaded active running Unattended Upgrades Shutdown
+  user-runtime-dir@1000.service                  loaded active exited  User Runtime Directory /run/user/1000
+  user@1000.service                              loaded active running User Manager for UID 1000
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+69 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
+
+===== CPU Usage =====
+%Cpu(s):  0.0 us, 10.0 sy,  0.0 ni, 90.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+
+===== Memory Usage =====
+               total        used        free      shared  buff/cache   available
+Mem:           908Mi       317Mi       129Mi       2.7Mi       574Mi       591Mi
+Swap:             0B          0B          0B
+
+===== Disk Usage =====
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.7G  2.3G  4.4G  34% /
+tmpfs            455M     0  455M   0% /dev/shm
+tmpfs            182M  908K  181M   1% /run
+efivarfs         128K  3.1K  120K   3% /sys/firmware/efi/efivars
+tmpfs            455M     0  455M   0% /tmp
+none             1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p13  989M   96M  827M  11% /boot
+/dev/nvme0n1p15  105M  6.3M   99M   7% /boot/efi
+none             1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none             1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none             1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs             91M  8.0K   91M   1% /run/user/1000
+
+===== EC2 Monitoring Report
+=====
+Date: Mon Jul  6 10:41:20 UTC 2026
+
+===== Running Services =====
+
+===== CPU Usage =====
+%Cpu(s):  0.0 us,  4.8 sy,  0.0 ni, 95.2 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+
+===== Memory Usage =====
+               total        used        free      shared  buff/cache   available
+Mem:           908Mi       317Mi       129Mi       2.7Mi       574Mi       591Mi
+Swap:             0B          0B          0B
+
+===== Disk Usage =====
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.7G  2.3G  4.4G  34% /
+tmpfs            455M     0  455M   0% /dev/shm
+tmpfs            182M  908K  181M   1% /run
+efivarfs         128K  3.1K  120K   3% /sys/firmware/efi/efivars
+tmpfs            455M     0  455M   0% /tmp
+none             1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p13  989M   96M  827M  11% /boot
+/dev/nvme0n1p15  105M  6.3M   99M   7% /boot/efi
+none             1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none             1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none             1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs             91M  8.0K   91M   1% /run/user/1000
+
+===== EC2 Monitoring Report
+=====
+Date: Mon Jul  6 10:43:52 UTC 2026
+
+===== Running Services =====
+  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+  acpid.service                                  loaded active running ACPI event daemon
+  chrony.service                                 loaded active running chrony, an NTP client/server
+  cron.service                                   loaded active running Regular background program processing daemon
+  dbus.service                                   loaded active running D-Bus System Message Bus
+  getty@tty1.service                             loaded active running Getty on tty1
+  irqbalance.service                             loaded active running irqbalance daemon
+  ModemManager.service                           loaded active running Modem Manager
+  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller
+  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd
+  polkit.service                                 loaded active running Authorization Manager
+  rsyslog.service                                loaded active running System Logging Service
+  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0
+  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+  snapd.service                                  loaded active running Snap Daemon
+  ssh.service                                    loaded active running OpenBSD Secure Shell server
+  systemd-journald.service                       loaded active running Journal Service
+  systemd-logind.service                         loaded active running User Login Management
+  systemd-networkd.service                       loaded active running Network Management
+  systemd-resolved.service                       loaded active running Network Name Resolution
+  systemd-udevd.service                          loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service                                loaded active running Disk Manager
+  unattended-upgrades.service                    loaded active running Unattended Upgrades Shutdown
+  user@1000.service                              loaded active running User Manager for UID 1000
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+        ACTIVE → The high-level unit activation state, i.e. generalization of SUB.
+        SUB    → The low-level unit activation state, values depend on unit type.
+
+23 loaded units listed.
+
+===== CPU Usage =====
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+
+===== Memory Usage =====
+               total        used        free      shared  buff/cache   available
+Mem:           908Mi       320Mi       126Mi       2.7Mi       575Mi       588Mi
+Swap:             0B          0B          0B
+
+===== Disk Usage =====
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.7G  2.3G  4.4G  34% /
+tmpfs            455M     0  455M   0% /dev/shm
+tmpfs            182M  908K  181M   1% /run
+efivarfs         128K  3.1K  120K   3% /sys/firmware/efi/efivars
+tmpfs            455M     0  455M   0% /tmp
+none             1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p13  989M   96M  827M  11% /boot
+/dev/nvme0n1p15  105M  6.3M   99M   7% /boot/efi
+none             1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none             1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none             1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs             91M  8.0K   91M   1% /run/user/1000
+
