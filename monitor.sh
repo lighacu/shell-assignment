@@ -1,21 +1,22 @@
-echo "===== EC2 Monitoring Report
-====="
+echo "====================================="
+echo "          EC2 MONITORING REPORT"
+echo "====================================="
 echo "Date: $(date)"
 echo 
-
-echo "===== Running Services ====="
+echo "========== RUNNING SERVICES ==========="
 systemctl list-units --type=service --state=running --no-pager
 echo
-
-echo "===== CPU Usage ====="
+echo "========== CPU USAGE ==========="
 top -bn1 | grep "Cpu(s)"
-echo
-
-echo "===== Memory Usage ====="
-free -h
-echo
-
-echo "===== Disk Usage ====="
+echo 
+echo "========== MEMORY USAGE ==========="
+free -h 
+echo 
+echo "========= DISK USAGE ==========="
 df -h
-echo
+echo 
+echo "======================================"
+echo "         END OF MONITORING REPORT"
+echo "======================================"
+
 
